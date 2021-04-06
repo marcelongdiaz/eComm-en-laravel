@@ -16,9 +16,21 @@ class CustomerDetailsSeeder extends Seeder
     {
         //
         DB::table('customer_details')->insert([
-            'name'=>'John Doe',
-            'email'=>'jdoe@yahoo.com',
-            'address'=>'California'
+            [
+                'name'=>'Maricar Demesa',
+                'email'=>'mari@yahoo.com',
+                'address'=>'California'
+            ],
+            [
+                'name'=>'Lucas Vermillion',
+                'email'=>'lucas@yahoo.com',
+                'address'=>'Mexico'
+            ],
+            [
+                'name'=>'Abdul Muhhamed',
+                'email'=>'abdulm@yahoo.com',
+                'address'=>'India'
+            ],
         ]);
     }
 }
