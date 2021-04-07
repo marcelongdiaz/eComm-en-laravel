@@ -50,5 +50,39 @@
     .custom-detail{
        height: 600px;
     }
+    .custom-cartlist{
+        min-height: 600px;
+    }
+    .custom-ordernow{
+        min-height: 450px;
+    }
+    .cartlist-divider{
+        /* background: rgb(213, 213, 213); */
+        border-bottom: 1px solid rgba(128, 128, 128, 0.537);
+        margin-bottom: 12px;
+        padding: 10px;
+    }
+    .cartlist-action{
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+    }
+    .image-container-small{
+        height: 100px;
+        overflow: hidden;
+        background: black;
+        position: relative;
+        border: 5px solid black;
+    }
+    .image-container-small img{
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .text-normal{
+        font-weight: lighter!important;
+    }
 </style>
 </html>
