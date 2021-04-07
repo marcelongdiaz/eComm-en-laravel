@@ -33,5 +33,22 @@
     .carousel-caption{
         background: #0a0a0ab0;
     }
+    .trending-img {
+        height: 40px;
+    }
+    .trending-item{
+        float: left;
+        width: 20%;
+        text-align: center;
+    }
+    .trending-wrapper{
+        margin: 30px;
+    }
+    .detail-img{
+        height: 200px;
+    }
+    .custom-detail{
+       height: 600px;
+    }
 </style>
 </html>

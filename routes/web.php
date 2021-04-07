@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CustomerDetailsController;
+use App\Http\Controllers\SessionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,5 +21,8 @@ Route::get('/login', function () {
 });
 
 Route::post("/login", [UserController::class, 'login']);
+Route::post("/add_to_cart", [ProductController::class, 'addToCart']);
 Route::get("/", [ProductController::class, 'index']);
+Route::get("/session/logout", [SessionController::class, 'logout']);
 Route::get("/customerdetails", [CustomerDetailsController::class, 'index']);
+Route::get("detail/{id}", [ProductController::class, 'details']);

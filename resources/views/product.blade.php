@@ -14,19 +14,19 @@
             <div class="carousel-inner" role="listbox">
                 @foreach ($products as $item)
                     <div class="item product-item {{ $item['id']==1?'active':''}}">
-                        <img src="{{ $item['gallery'] }}" class="slider-img">
-                        <div class="carousel-caption">
-                            <h3>
-                                {{ $item['name'] }}
-                            </h3>
-                            <p>
-                                {{ $item['description'] }}
-                            </p>
-                    </div>
+                        <a href="detail/{{$item['id']}}">
+                            <img src="{{ $item['gallery'] }}" class="slider-img">
+                            <div class="carousel-caption">
+                                <h3>
+                                    {{ $item['name'] }}
+                                </h3>
+                                <p>
+                                    {{ $item['description'] }}
+                                </p>
+                            </div>
+                        </a>
                   </div>
                 @endforeach
-
-
             </div>
 
             <!-- Controls -->
@@ -38,6 +38,21 @@
               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
+          </div>
+          <div class="trending-wrapper">
+              <h4>Trending Products</h4>
+                @foreach ($products as $item)
+                    <div class="trending-item">
+                        <a href="detail/{{$item['id']}}">
+                            <img src="{{ $item['gallery'] }}" class="trending-img">
+                            <div class="trending-caption">
+                                    <h4>
+                                        {{ $item['name'] }}
+                                    </h4>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
           </div>
 
     </div>
